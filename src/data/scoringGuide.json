@@ -1,0 +1,113 @@
+{
+  "scoring_guide": {
+    "hair_camera_analysis": {
+      "hair_density": {
+        "range": "0-100",
+        "description": "Hair density score",
+        "interpretation": {
+          "0-33": "Low density (sparse hair)",
+          "34-66": "Medium density (average hair)",
+          "67-100": "High density (thick, full hair)"
+        },
+        "note": "Higher score = denser hair. Track improvements like: 35 → 45"
+      },
+      "hair_thickness": {
+        "range": "0-100",
+        "description": "Hair strand thickness score",
+        "interpretation": {
+          "0-33": "Thin hair strands",
+          "34-66": "Medium thickness strands",
+          "67-100": "Thick, strong strands"
+        },
+        "note": "Higher score = thicker individual hair strands"
+      },
+      "damage_level": {
+        "range": "0-100",
+        "description": "Hair damage score",
+        "interpretation": {
+          "0-25": "Minimal damage (healthy hair)",
+          "26-50": "Mild damage (some issues)",
+          "51-75": "Moderate damage (needs attention)",
+          "76-100": "Severe damage (requires treatment)"
+        },
+        "note": "Higher score = more damage. Goal is to reduce this score over time"
+      },
+      "scalp_condition": {
+        "range": "0-100",
+        "description": "Scalp health score",
+        "interpretation": {
+          "0-25": "Very unhealthy (irritated, severe issues)",
+          "26-50": "Poor condition (dryness, flaking)",
+          "51-75": "Fair condition (minor issues)",
+          "76-100": "Excellent condition (healthy scalp)"
+        },
+        "note": "Higher score = healthier scalp. Track improvements over time"
+      },
+      "hair_type": {
+        "range": "1-4",
+        "description": "Hair type classification (categorical)",
+        "interpretation": {
+          "1": "Straight hair",
+          "2": "Wavy hair",
+          "3": "Curly hair",
+          "4": "Coily hair"
+        },
+        "note": "This is categorical, not a score. It describes hair pattern."
+      }
+    },
+    "microscope_analysis": {
+      "cuticle_condition": {
+        "range": "0-100",
+        "description": "Cuticle layer health score",
+        "interpretation": {
+          "0-25": "Severely damaged (extensive lifting/damage)",
+          "26-50": "Damaged cuticle (visible issues)",
+          "51-75": "Lifted cuticle (minor damage)",
+          "76-100": "Intact cuticle (healthy)"
+        },
+        "note": "Higher score = healthier cuticle. Track recovery progress"
+      },
+      "cortex_integrity": {
+        "range": "0-100",
+        "description": "Cortex structure integrity score",
+        "interpretation": {
+          "0-33": "Significant damage (structure compromised)",
+          "34-66": "Partial damage (some structural issues)",
+          "67-100": "Intact cortex (strong structure)"
+        },
+        "note": "Higher score = better structural integrity"
+      },
+      "porosity_level": {
+        "range": "0-100",
+        "description": "Hair porosity score",
+        "interpretation": {
+          "0-33": "Low porosity (tightly closed cuticles)",
+          "34-66": "Medium porosity (balanced)",
+          "67-100": "High porosity (very porous, damaged cuticles)"
+        },
+        "note": "Medium (34-66) is ideal. Very low or very high can indicate issues"
+      }
+    },
+    "dietary_tags": [
+      "vegetarian",
+      "vegan",
+      "non-vegetarian",
+      "gluten-free",
+      "contains-dairy",
+      "nut-free",
+      "egg-free"
+    ],
+    "scoring_system": {
+      "description": "All scores are integers from 0-100 for continuous tracking",
+      "benefits": "Track progress over time (e.g., hair_density: 35 → 40 → 45)",
+      "note": "Higher scores are better except for damage_level (lower damage is better)"
+    }
+  },
+  "usage": "All scores are 0-100 integers. Track improvements over time.",
+  "example": {
+    "metric": "hair_density",
+    "before": 35,
+    "after": 45,
+    "improvement": "+10 points"
+  }
+}
