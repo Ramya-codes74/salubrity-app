@@ -1,0 +1,1 @@
+import{j as s}from"./index-CaIbOwnm.js";const t=({open:e,onClose:a,children:l})=>e?s.jsxs("div",{className:"fixed inset-0 z-50",children:[s.jsx("div",{className:"absolute inset-0 bg-black/40",onClick:a}),s.jsx("div",{className:"absolute right-0 top-0 h-full w-[380px] bg-white dark:bg-gray-900 shadow-lg",children:l})]}):null;export{t as S};
