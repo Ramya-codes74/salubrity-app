@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://Ramya-codes74.github.io/salubrity-tenant/",
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
