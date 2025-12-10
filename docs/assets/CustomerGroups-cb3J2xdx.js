@@ -1,0 +1,1 @@
+import{j as s}from"./index-CaIbOwnm.js";const r=()=>s.jsxs("div",{className:"p-6",children:[s.jsx("h1",{className:"text-3xl font-bold",children:"Customer Groups"}),s.jsx("p",{className:"mt-2 text-gray-500",children:"Manage groups here (placeholder)"})]});export{r as default};
